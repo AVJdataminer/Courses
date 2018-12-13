@@ -1,3 +1,5 @@
+Desc: This covers data cleaning skills for preparing data for a warehouse.  It should include deduping, modifying columns, as well as reshaping and aggregating data.
+
 ## Chapter 1 - 
    * Lesson 1.1 - Introduction to 
      * A learning objective: Create 
