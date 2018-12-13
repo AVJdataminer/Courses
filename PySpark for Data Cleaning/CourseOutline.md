@@ -18,18 +18,18 @@ Assumes
    * Lesson 2.4 - Identify Outliers
      * A learning objective: Calculate the the variable bounds based on interquantile ranges for each variable and show outliers.
 ## Chapter 3 - Reshaping Data
-   * Lesson 3.1 - add and delete cols
+   * Lesson 3.1 - Add and delete columns to spark data frames
      * A learning objective: 
-   * Lesson 3.2 - edit cols
+   * Lesson 3.2 - Conditional data selection
+     * A learning objective: Select data for the time period of interest
+   * Lesson 3.3 - Transforming values
+     * A learning objective: Recode a categorical variable
+   * Lesson 3.4 - Table Joins with PySpark
      * A learning objective: 
-   * Lesson 3.3 - transpose data
-     * A learning objective: 
-   * Lesson 3.4 - convert between data types
-     * A learning objective: 
-## Chapter 4 - Aggregating Data
-   * Lesson 4.1 - 
-     * A learning objective: 
-   * Lesson 4.2 - 
-     * A learning objective: 
+## Chapter 4 - Feature Identification & Engineering
+   * Lesson 4.1 - Explore Data Relationships 
+     * A learning objective: Calculate correlations between response variable and explanatory variables
+   * Lesson 4.2 - Create new features from existing variables
+     * A learning objective: Group by, sort, and filter
    * Lesson 4.3 - 
      * A learning objective: 
