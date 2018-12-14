@@ -32,6 +32,5 @@
      * A learning objective: Join two tables together into a new spark data frame.
    * Lesson 4.3 - Explore Data Relationships 
      * A learning objective: Calculate correlations between the response variable and explanatory variables.
-   * Lesson 4.4 - Create new features from combinig existing variables
-     * A learning objective:Create a compound feature based on two existing features.
+
 
