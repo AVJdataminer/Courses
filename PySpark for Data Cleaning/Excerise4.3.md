@@ -16,20 +16,20 @@ Using the `core` list we can create a new spark dataframe with the column names 
 ## Instructions:
 ###The Happiness spark dataframe has been loaded into the workspace
 
-```python
-#### Convert strings to floats by using the `cast` function, first select the numeric variables from the dataframe.    
+
+# Convert strings to floats by using the `cast` function, first select the numeric variables from the dataframe.    
 flts = df.select(df['Rank'].cast("float"),df['Total Score'].cast("float"), df['Well Being'].cast("float),df['____'].___("float"),df.['____'].cast("____"))
 
 
-#### Complete the list of colunm names for output correlations dataframe
+# Complete the list of colunm names for output correlations dataframe
 nomin=['Rank', 'Well Being', '___', '___']
 
 
-#### Calculate the length of input spark dataframe
+# Calculate the length of input spark dataframe
 n_numerical = __(nomin)
 
 
-#### Iterate through each row column combination calculating the correlations, fill in the input float dataframe and the names list.
+# Iterate through each row column combination calculating the correlations, fill in the input float dataframe and the names list.
 
 
 corr = []
@@ -40,7 +40,6 @@ for i in range(0, n_numerical):
   corr.append([nomin[i] + temp)
 correlations = spark.createDataFrame(corr, ['Column'] + nomin)
 correlations.show()
-```
 
 
 ## script.py
