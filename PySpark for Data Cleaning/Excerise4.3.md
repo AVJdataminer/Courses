@@ -1,5 +1,5 @@
 ## Exercise:
-[We have a happiness database which was extracted from the Wallethub.com analysis on the happiest states in America.] (https://wallethub.com/edu/happiest-states/6959/) 
+We have a happiness database which was extracted from the Wallethub.com analysis on the happiest states in America. (https://wallethub.com/edu/happiest-states/6959/) 
 
 ### Methodology
 In order to determine the happiest states in America, WalletHub compared the 50 states across three key dimensions: 1) Emotional & Physical Well-Being `Well Being`, 2) Work Environment `Work` and 3) Community & Environment `Environment`. The key dimensions were combined to create a happiest ranking `Rank` for the each state.
@@ -14,7 +14,7 @@ Using the `core` list we can create a new spark dataframe with the column names 
 
 
 ## Instructions:
-###The Happiness spark dataframe has been loaded into the workspace
+### The Happiness spark dataframe has been loaded into the workspace
 
 ```python
 # Convert strings to floats by using the `cast` function, first select the numeric variables from the dataframe.    
