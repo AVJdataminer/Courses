@@ -8,27 +8,47 @@ The last step in data cleaning is to review the relationships between the respon
 
 Next, we create a list of the column names to be added to the output list of correlations. The `Rank` variable is our response variable so we select that first, followed by the numeric explanatory variables `Well Being, Work, Environment`.
 
-Once we have our input spark dataframe we can write a for loop to iterate over the rows and columns and calculate the correlation coeficients along the way. Then we append those ['i,'j'] correlations to the 'core' list.
+Once we have our input spark dataframe we can write a for loop to iterate over the rows and columns and calculate the correlation coeficients along the way. Then we append those ['i,j'] correlations to the `core` list.
 
-Using the 'core' list we can create a new spark dataframe with the column names its corresponding correlation value.
+Using the `core` list we can create a new spark dataframe with the column names its corresponding correlation value.
 
 
 ## Instructions:
+###The Happiness spark dataframe has been loaded into the workspace
+
+```python
+#### Convert strings to floats by using the `cast` function, first select the numeric variables from the dataframe.    
+flts = df.select(df['Rank'].cast("float"),df['Total Score'].cast("float"), df['Well Being'].cast("float),df['____'].___("float"),df.['____'].cast("____"))
 
 
+#### Complete the list of colunm names for output correlations dataframe
+nomin=['Rank', 'Well Being', '___', '___']
 
 
+#### Calculate the length of input spark dataframe
+n_numerical = __(nomin)
+
+
+#### Iterate through each row column combination calculating the correlations, fill in the input float dataframe and the names list.
+
+
+corr = []
+for i in range(0, n_numerical):
+  temp = [None] * i
+  for j in range(i,n_numerical):
+    temp.append(____.corr(____[i], ____[j]))
+  corr.append([nomin[i] + temp)
+correlations = spark.createDataFrame(corr, ['Column'] + nomin)
+correlations.show()
+```
 
 
 ## script.py
+
 ```python
-s = "Python syntax highlighting"
-print s
-```
-```python
-df=spark.read.format("csv").option("header","true").load("googledrive.csv")
+df = spark.read.format("csv").option("header","true").load("googledrive.csv")
 # convert strings to floats
-flts=df.select(df['Rank'].cast("float"),df['Total Score'].cast("float"), df['Well Being'].cast("float),df['Work'].cast("float"),df.['Environment'].cast("float"))
+flts = df.select(df['Rank'].cast("float"),df['Total Score'].cast("float"), df['Well Being'].cast("float),df['Work'].cast("float"),df.['Environment'].cast("float"))
 
 # create list of colunm names for output dataframe
 nomin=['Rank', 'Well Being', 'Work', 'Environment']
