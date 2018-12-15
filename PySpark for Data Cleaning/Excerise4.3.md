@@ -1,12 +1,12 @@
 ## Exercise:
-We have a happiness database which was extracted from the Wallethub.com analysis on the happiest states in America. ['https://wallethub.com/edu/happiest-states/6959/'] . 
+[We have a happiness database which was extracted from the Wallethub.com analysis on the happiest states in America.] (https://wallethub.com/edu/happiest-states/6959/) 
 
 ### Methodology
-In order to determine the happiest states in America, WalletHub compared the 50 states across three key dimensions: 1) Emotional & Physical Well-Being (Well Being), 2) Work Environment (Work and 3) Community & Environment (Environment). The key dimensions were combined to create a happiest ranking (Rank) for the each state.
+In order to determine the happiest states in America, WalletHub compared the 50 states across three key dimensions: 1) Emotional & Physical Well-Being `Well Being`, 2) Work Environment `Work` and 3) Community & Environment `Environment`. The key dimensions were combined to create a happiest ranking `Rank` for the each state.
 
-The last step in data cleaning is to review the relationships between the response variable and the explanatory variables. In order to calculate correlation coefficients we first need to 'cast' the spark 'dataframe' column types to 'float'.  
+The last step in data cleaning is to review the relationships between the response variable and the explanatory variables. In order to calculate correlation coefficients we first need to `cast` the spark dataframe column types to `float`.  
 
-Next, we create a list of the column names to be added to the output list of correlations. The 'Rank' variable is our response variable so we select that first, followed by the numeric explanatory variables 'Well Being','Work','Environment'.
+Next, we create a list of the column names to be added to the output list of correlations. The `Rank` variable is our response variable so we select that first, followed by the numeric explanatory variables `Well Being, Work, Environment`.
 
 Once we have our input spark dataframe we can write a for loop to iterate over the rows and columns and calculate the correlation coeficients along the way. Then we append those ['i,'j'] correlations to the 'core' list.
 
