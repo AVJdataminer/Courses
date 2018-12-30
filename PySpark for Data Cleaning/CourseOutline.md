@@ -1,4 +1,4 @@
-# PySpark fo Data Cleaning - Course Outline
+# PySpark for Data Cleaning - Course Outline
 
 ## Chapter 1 - Introduction to PySpark for Data Cleaning
    * Lesson 1.1 - Introduction to PySpark for Data Cleaning
